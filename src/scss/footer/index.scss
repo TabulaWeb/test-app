@@ -1,3 +1,75 @@
 .footer {
-    
+    padding: 0px 73px 0px 53px;
+    margin: 0 auto;
+    width: calc(100vw - 486px);
+    background-color: #142229;
+
+    &__row {
+        padding: 42px 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    &-phone {
+        width: 25%;
+        & a {
+            font-size: 24px;
+            line-height: 110%;
+            font-family: 'Gilroy-Bold';
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+    }
+
+    &-social {
+        width: 25%;
+        display: flex;
+        gap: 0 8px;
+
+        & a {
+            text-decoration: none;
+        }
+    }
+
+    &-glasses {
+        width: 25%;
+        & button {
+            background: none;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+
+            & img {
+                margin-right: 8px;
+            }
+
+            & span {
+                font-family: 'Gilroy-Bold';
+                font-size: 16px;
+                
+                color: #FFFFFF;
+            }
+        }
+    }
+
+    &-controle {
+        width: 25%;
+        & button {
+            padding: 15px 24px;
+            height: 46px;
+            border: 2px solid #00BDD6;
+            background-color: transparent;
+            width: 100%;
+            border-radius: 8px;
+            cursor: pointer;
+            font-family: 'Gilroy-Bold';
+            font-size: 16px;
+            color: #00BDD6;
+            text-shadow: 0 1px 0 rgb(0 0 0 / 10%);
+            line-height: 90%;
+        }
+    }
 }

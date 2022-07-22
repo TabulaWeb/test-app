@@ -15,3 +15,14 @@ function testWebP(callback) {
         document.querySelector('body').classList.add('no-webp');
     }
 });
+
+console.log(123123)
+
+var slider = tns({
+    container: '.home-slider',
+    items: 3,
+    slideBy: 'page',
+    mouseDrag: true,
+    swipeAngle: false,
+    speed: 400
+});
