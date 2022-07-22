@@ -134,20 +134,10 @@ function images(){
 
 function font(){
     src(path.src.font)
-        .pipe(ttf2woff())
         .pipe(dest(path.build.font))
     return src(path.src.font)
-        .pipe(ttf2woff2())
         .pipe(dest(path.build.font))
 }
-
-gulp.task('otf2ttf', function(){
-    return src([`${source_folder}/font/*.otf`])
-        .pipe(fonter({
-            formats: ['ttf']
-        }))
-        .pipe(dest(`${source_folder}/font/`))
-})
 
 gulp.task('svgSprite', function(){
     return gulp.src([`${source_folder}/iconsprite/*.svg`])
@@ -162,32 +152,6 @@ gulp.task('svgSprite', function(){
         .pipe(dest(path.build.img))
 })
 
-function fontsStyle() {
-    let file_content = fs.readFileSync(source_folder + '/scss/fonts.scss');
-        if (file_content == '') {
-            fs.writeFile(source_folder + '/scss/fonts.scss', '', cb);
-            return fs.readdir(path.build.font, function (err, items) {
-            if (items) {
-                let c_fontname;
-                for (var i = 0; i < items.length; i++) {
-                    let fontname = items[i].split('.');
-                    fontname = fontname[0];
-                    if (c_fontname != fontname) {
-                        fs.appendFile(source_folder + '/scss/fonts.scss', '@include font("' + fontname + '", "' + fontname + '", "400", "normal");\r\n', cb);
-                    }
-                    c_fontname = fontname;
-                }
-            }
-        })
-    }
-    return new Promise(function(resolve, reject) {
-        console.log("HTTP Server Started");
-        resolve();
-    });
-}
-    
-function cb() {}
-
 function watchFiles(){
     gulp.watch([path.watch.html], html);
     gulp.watch([path.watch.css], css);
@@ -199,10 +163,10 @@ function clean(){
     return del(path.clean);
 }
 
-let build = gulp.series(clean, gulp.parallel(js, css, html, images, font), fontsStyle);
+let build = gulp.series(clean, gulp.parallel(js, css, html, images, font));
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
-exports.fontsStyle = fontsStyle;
+
 exports.font = font;
 exports.images = images;
 exports.js = js;

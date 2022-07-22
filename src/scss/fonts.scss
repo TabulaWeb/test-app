@@ -1,0 +1,42 @@
+@include font("Gilroy-Bold", "Gilroy-Bold", "700", "bold");
+@include font("Gilroy-ExtraBold", "Gilroy-ExtraBold", "800", "extra-bold");
+@include font("Gilroy-Light", "Gilroy-Light", "300", "light");
+@include font("Gilroy-Medium", "Gilroy-Medium", "500", "medium");
+@include font("Gilroy-Regular", "Gilroy-Regular", "400", "regular");
+@include font("Gothampro-Light", "Gothampro-Light", "300", "light");
+@include font("Journalsansserif-Bold", "Journalsansserif-Bold", "700", "bold");
+
+@font-face { 
+    font-family: Gilroy-Bold; 
+    src: url('../font/Gilroy-Bold.ttf'); 
+}
+
+@font-face { 
+    font-family: Gilroy-ExtraBold; 
+    src: url('../font/Gilroy-ExtraBold.ttf'); 
+}
+
+@font-face { 
+    font-family: Gilroy-Light; 
+    src: url('../font/Gilroy-Light.ttf'); 
+}
+
+@font-face { 
+    font-family: Gilroy-Medium; 
+    src: url('../font/Gilroy-Medium.ttf'); 
+}
+
+@font-face { 
+    font-family: Gilroy-Regular; 
+    src: url('../font/Gilroy-Regular.ttf'); 
+}
+
+@font-face { 
+    font-family: Gothampro-Light; 
+    src: url('../font/Gothampro-Light.ttf'); 
+}
+
+@font-face { 
+    font-family: Journalsansserif-Bold; 
+    src: url('../font/Journalsansserif-Bold.ttf'); 
+}

@@ -1,1 +1,12 @@
-/* No CSS *//*# sourceMappingURL=index.css.map */
+.sidebar {
+  width: 360px;
+  background: #1E9CB2;
+  height: 100vh;
+  position: fixed;
+}
+
+.sidebar__logo {
+  padding: 24px 56px 0;
+  margin-bottom: 24px;
+}
+/*# sourceMappingURL=index.css.map */
