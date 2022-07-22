@@ -16,13 +16,14 @@ function testWebP(callback) {
     }
 });
 
-console.log(123123)
-
 var slider = tns({
-    container: '.home-slider',
-    items: 3,
+    container: '.home-slider__slides',
+    items: 1,
     slideBy: 'page',
     mouseDrag: true,
     swipeAngle: false,
-    speed: 400
+    nav: true,
+    speed: 400,
+    controlsContainer: '.home-slider__controls',
+    navContainer: '.slider-dot'
 });
