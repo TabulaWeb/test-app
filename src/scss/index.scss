@@ -1,0 +1,40 @@
+// Шрифты
+@mixin font($font_name, $file_name, $weight, $style) {
+    @font-face {
+    font-family: $font_name;
+    font-display: swap;
+    src: url("../font/#{$file_name}.woff") format("woff"), url("../font/#{$file_name}.woff2") format("woff2");
+    font-weight: #{$weight};
+    font-style: #{$style};
+    }
+}
+
+@import 'fonts';
+
+// Переменные
+@import 'variable';
+
+// Стили для интерфейса
+@import 'interface';
+
+// Header
+@import './header/index.scss';
+
+// Footer
+@import './footer/index.scss';
+
+// Sidebar
+@import './sidebar/index.scss';
+
+// Section main
+@import './section-main/index.scss';
+// Section benefits
+@import './section-benefits/index.scss';
+// Section services
+@import './section-services/index.scss';
+// Section technology
+@import './section-technology/index.scss';
+// Section about
+@import './section-about/index.scss';
+// Section reviews
+@import './section-reviews/index.scss';

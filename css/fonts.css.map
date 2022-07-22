@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../src/scss/fonts.scss"
+    ],
+    "names": [],
+    "file": "fonts.css"
+}
