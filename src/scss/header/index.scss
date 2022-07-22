@@ -1,3 +1,102 @@
-h1 {
-    font-size: 13px;
+.header {
+    padding: 0px 73px 0px 53px;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    width: calc(100vw - 486px);
+
+    &__row {
+        padding: 24px 0 16px;
+        border-bottom: 1px solid #F0F7FB;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-addr {
+        display: flex;
+        gap: 0 19px;
+
+        & .header-addr__content p {
+            color: #FFFFFF;
+
+            &:first-child {
+                font-size: 16px;
+                line-height: 100%;
+                font-family: 'Gilroy-Bold';
+                margin-bottom: 4px;
+            }
+
+            &:last-child {
+                font-size: 12px;
+                line-height: 110%;
+                font-family: 'Gilroy-Bold';
+            }
+        }
+    }
+
+    &-time {
+        display: flex;
+        gap: 0 19px;
+
+        & .header-time__content p {
+            color: #FFFFFF;
+
+            &:first-child {
+                font-size: 16px;
+                line-height: 100%;
+                font-family: 'Gilroy-Bold';
+                margin-bottom: 4px;
+            }
+
+            &:last-child {
+                font-size: 12px;
+                line-height: 110%;
+                font-family: 'Gilroy-Bold';
+            }
+        }
+    }
+
+    &-phone {
+        & a{
+            font-size: 24px;
+            line-height: 110%;
+            font-family: 'Gilroy-Bold';
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+    }
+
+    &-controle {
+        display: flex;
+        gap: 0 24px;
+
+        & button{
+            border: none;
+            font-family: 'Gilroy-Bold';
+            font-size: 16px;
+            cursor: pointer;
+            color: #FFFFFF;
+
+            &:first-child {
+                background: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                
+                & img {
+                    margin-right: 8px;
+                }
+            }
+
+            &:last-child {
+                background-color: #00BDD6;
+                border-radius: 8px;
+                padding: 15px 24px;
+                height: 46px;
+                line-height: 110%;
+            }
+        }
+    }
 }
