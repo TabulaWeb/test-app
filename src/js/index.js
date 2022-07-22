@@ -24,6 +24,6 @@ var slider = tns({
     swipeAngle: false,
     nav: true,
     speed: 400,
-    controlsContainer: '.home-slider__controls',
-    navContainer: '.slider-dot'
+    controlsContainer: '.home-slider__arrow',
+    navContainer: '.home-slide__dot'
 });
