@@ -1,3 +1,138 @@
-h1 {
-    font-size: 13px;
+.benefits {
+    width: calc(100vw - 360px);
+    padding: 0px 73px 0px 53px;
+    padding-top: 50px;
+    padding-bottom: 70px;
+
+    &-title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 42px;
+
+        & h2 {
+            font-family: 'Gilroy-Bold';
+            font-size: 32px;
+            line-height: 110%;
+            color: rgba(26, 44, 54, 1);
+        }
+
+        & .benefits-slider_arrow {
+            display: flex;
+            gap: 0 8px;
+            & button {
+                background-color: #F0F7FB;
+                border-radius: 8px;
+                width: 36px;
+                height: 36px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 0;
+                cursor: pointer;
+
+                & picture {
+                    width: 100%;
+                    height: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+    &-slider {
+
+        &__slide {
+            
+            position: relative;
+            gap: 0 16px;
+            padding: 24px;
+            transition: 0.2s;
+            border-radius: 16px;
+
+            &-content {
+                display: flex;
+                flex-direction: row;
+                gap: 0 16px;
+            }
+
+            &:hover {
+                background-color: #F0F7FB;
+                transition: 0.2s;
+
+                & .more-icon{
+                    opacity: 1;
+                    transition: 0.2s;
+                    transform: translateY(0);
+                }
+
+                & .benefits-slider__slide-icon {
+                    // background: #FFFFFF;
+
+                    & picture:first-child{
+                        position: absolute;
+                        transform: translate(0, 0);
+                        transition: 0.2s;
+                    }
+
+                    & picture:last-child{
+                        opacity: 0;
+                        transition: 0.2s;
+                    }
+                }
+            }
+
+            &-icon {
+                display: flex;
+                width: 72px;
+                height: 72px;
+                border-radius: 16px;
+
+                & picture:first-child{
+                    position: absolute;
+                    transform: translate(-15px, -15px);
+                    transition: 0.2s;
+                    z-index: 2;
+                }
+
+                & picture:last-child{
+                    transition: 0.2s;
+                    height: 56px;
+                }
+            }
+
+            &-text {
+                font-family: 'Gilroy-Bold';
+                font-size: 18px;
+                line-height: 110%;
+                color: #1A2C36;
+                position: relative;
+                z-index: 1;
+            }
+
+            & .more-icon {
+                width: 102px;
+                height: 102px;
+                display: flex;
+                position: absolute;
+                right: 14px;
+                bottom: -14px;
+                opacity: 0;
+                transition: 0.2s;
+                transform: translateY(40px);
+            }
+        }
+    }
+
 }
+
+@keyframes shimmy {
+    0% {
+      transform: translate(-15px, -15px);    
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }

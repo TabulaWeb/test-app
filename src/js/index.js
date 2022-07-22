@@ -16,10 +16,10 @@ function testWebP(callback) {
     }
 });
 
-var slider = tns({
+let slider = tns({
     container: '.home-slider__slides',
     items: 1,
-    slideBy: 'page',
+    slideBy: 1,
     mouseDrag: true,
     swipeAngle: false,
     nav: true,
@@ -27,3 +27,15 @@ var slider = tns({
     controlsContainer: '.home-slider__arrow',
     navContainer: '.home-slide__dot'
 });
+
+let slider_benefits = tns({
+    container: '.benefits-slider',
+    items: 4,
+    slideBy: 1,
+    nav: false,
+    mouseDrag: true,
+    swipeAngle: false,
+    speed: 400,
+    // edgePadding: 25,
+    controlsContainer: '.benefits-slider_arrow',
+})

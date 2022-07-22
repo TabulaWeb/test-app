@@ -1,5 +1,18 @@
 .home {
     width: calc(100vw - 360px);
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 28px;
+        background-image: url(../../img/ptrn_wave.png);
+        background-repeat: no-repeat;
+        z-index: 1;
+    }
 
     &-slider{
         position: relative;
@@ -81,7 +94,7 @@
         &__controls {
             display: flex;
             position: absolute;
-            bottom: 50px;
+            bottom: 60px;
             right: 73px;
 
             &-contaioner {
