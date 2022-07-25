@@ -5,6 +5,7 @@
     position: fixed;
     display: flex;
     flex-direction: column;
+    z-index: 1;
 
     &__logo {
         padding: 24px 56px 0;

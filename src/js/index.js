@@ -39,3 +39,29 @@ let slider_benefits = tns({
     // edgePadding: 25,
     controlsContainer: '.benefits-slider_arrow',
 })
+
+let slider_services = tns({
+    // services-slider
+    // services-title__control-arrow
+    container: '.services-slider',
+    items: 4,
+    slideBy: 1,
+    nav: false,
+    mouseDrag: true,
+    swipeAngle: false,
+    speed: 400,
+    controlsContainer: '.services-title__control-arrow',
+})
+
+let slider_technologies = tns({
+    // services-slider
+    // services-title__control-arrow
+    container: '.technologies-slider',
+    items: 4,
+    slideBy: 1,
+    nav: false,
+    mouseDrag: true,
+    swipeAngle: false,
+    speed: 400,
+    controlsContainer: '.technologies-title__control-arrow',
+})
