@@ -11,10 +11,12 @@
     z-index: 10;
     opacity: 0;
     pointer-events: none;
+    transition: 0.2s;
 
     &.active {
         opacity: 1;
         pointer-events: auto;
+        transition: 0.2s;
     }
 
     &-content {
@@ -96,7 +98,9 @@
                     top: 50%;
                     transform: translateY(-50%);
                     left: 49px;
-
+                    transition: 0.2s;
+                    pointer-events: none;
+                    
                     font-family: "Gilroy-Medium";
                     font-size: 16px;
                     line-height: 115%;
@@ -130,6 +134,18 @@
                     background-color: #ffffff;
                     border: none;
                     outline: none;
+
+                    &:focus ~ .form-placeholder{
+                        top: 10px;
+                        font-size: 12px;
+                        padding-right: 8px;
+                        transform: none;
+                        transition: 0.2s;
+
+                        &::before {
+                            right: -1px;
+                        }
+                    }
                 }
             }
 
@@ -160,12 +176,15 @@
                     top: 50%;
                     transform: translateY(-50%);
                     left: 49px;
-
+                    pointer-events: none;
                     font-family: "Gilroy-Medium";
                     font-size: 16px;
                     line-height: 115%;
                     color: #9BBACF;
                     margin-bottom: 4px;
+                    transition: 0.2s;
+
+                    
 
                     &::before {
                         content: '';
@@ -194,6 +213,18 @@
                     background-color: #ffffff;
                     border: none;
                     outline: none;
+
+                    &:focus ~ .form-placeholder{
+                        top: 10px;
+                        font-size: 12px;
+                        padding-right: 8px;
+                        transform: none;
+                        transition: 0.2s;
+
+                        &::before {
+                            right: -1px;
+                        }
+                    }
                 }
             }
 
