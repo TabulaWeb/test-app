@@ -65,3 +65,14 @@ let slider_technologies = tns({
     speed: 400,
     controlsContainer: '.technologies-title__control-arrow',
 })
+
+let slider_reviews = tns ({
+    container: '.reviews-slider',
+    items: 4,
+    slideBy: 1,
+    nav: false,
+    mouseDrag: true,
+    swipeAngle: false,
+    speed: 400,
+    controlsContainer: '.reviews-title__control-arrow',
+})

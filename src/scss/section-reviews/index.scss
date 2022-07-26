@@ -1,3 +1,173 @@
-h1 {
-    font-size: 13px;
+.reviews {
+    width: calc(100vw - 360px);
+    padding: 0px 73px 0px 53px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    position: relative;
+
+    &-title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 42px;
+
+        & h2 {
+            font-family: 'Gilroy-Bold';
+            font-size: 32px;
+            line-height: 110%;
+            color: rgba(26, 44, 54, 1);
+        }
+
+        &__control {
+            display: flex;
+            align-items: center;
+            gap: 0 32px;
+
+            &-link {
+                height: 14px;
+                & a {
+                    display: flex;
+                    height: 14px;
+                    font-family: 'Gilroy-Bold';
+                    font-size: 16px;
+                    line-height: 110%;
+                    color: #1A2C36;
+                    text-decoration: none;
+                    
+
+                    & .icon-wave {
+                        margin-top: -3px;
+                        margin-left: 8px;
+                        display: block;
+                    }
+                }
+            }
+
+            &-arrow {
+                display: flex;
+                gap: 0 8px;
+                & button {
+                    background-color: #F0F7FB;
+                    border-radius: 8px;
+                    width: 36px;
+                    height: 36px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 0;
+                    cursor: pointer;
+    
+                    & picture {
+                        width: 100%;
+                        height: 20px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+
+    &-slider{
+
+        &__slide {
+            display: flex;
+            height: 100%;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            border-radius: 16px;
+            padding: 24px;
+            -webkit-box-shadow: inset 0 0 0 1px #ccdde9;
+            box-shadow: inset 0 0 0 1px #ccdde9;
+            position: relative;
+
+            &-img {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 64px;
+                height: 64px;
+                background-color: #ffffff;
+                -webkit-box-shadow: 0 0 0 6px #ffffff;
+                box-shadow: 0 0 0 6px #ffffff;
+                border-radius: 16px;
+                overflow: hidden;
+
+                & .slide-img__text {
+                    background-color: #F0F7FB;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    & span {
+                        font-family: 'Gilroy-Bold';
+                        font-size: 24px;
+                        line-height: 110%;
+                        letter-spacing: 0.1em;
+                        color: #B5C9D7;
+                    }
+                }
+            }
+
+            &-rating {
+                margin-bottom: 16px;
+                display: flex;
+
+                & .slide-rating__item {
+                    display: block;
+                    margin-right: 4px;
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+
+            &-data {
+                margin-bottom: 8px;
+
+                & p {
+                    font-family: 'Gilroy-Medium';
+                    font-size: 14px;
+                    line-height: 115%;
+                    color: #9BBACF;
+                }
+            }
+
+            &-name {
+                margin-bottom: 8px;
+
+                & p{
+                    font-family: 'Gilroy-Bold';
+                    font-size: 18px;
+                    line-height: 110%;
+                    color: #1A2C36;
+                }
+            }
+
+            &-description {
+                color: #204963;
+                font-size: 16px;
+                line-height: 140%;
+                font-family: 'Gilroy-Medium';
+            }
+
+            &-badge {
+                padding: 6px 8px;
+                background: #E0EEF8;
+                border-radius: 4px;
+                width: fit-content;
+
+                & p{
+                    font-family: 'Gilroy-Bold';
+                    color: rgba(32, 73, 99, 1);
+                    font-size: 11px;
+                    line-height: 100%;
+                }
+            }
+        }
+    }
 }
